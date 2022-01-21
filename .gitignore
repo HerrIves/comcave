@@ -2,4 +2,6 @@
 /nbproject/
 /.idea/
 /gradle/
+/build/
+/target/
 

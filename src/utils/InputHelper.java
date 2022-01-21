@@ -3,12 +3,11 @@ package utils;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 public class InputHelper {
    static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
    
-  public static int intReader(String message) throws IOException{
+  public static int readInt(String message) throws IOException {
    int int2Read = 0;
    
    try {
@@ -17,9 +16,8 @@ public class InputHelper {
    
    } catch (NumberFormatException e) {
      System.out.print("not valid number. ");
-     int2Read = intReader(message);
+     int2Read = readInt(message);
    }
-   
    return int2Read;
   }
   

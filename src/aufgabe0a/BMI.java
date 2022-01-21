@@ -1,4 +1,4 @@
-package mytestarea.OA;
+package aufgabe0a;
 
 public class BMI {
   private int weight;

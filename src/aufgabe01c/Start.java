@@ -7,8 +7,8 @@ public class Start {
 
   public static void main(String[] args) throws IOException {
    Rectangle rechteck = new Rectangle(
-           InputHelper.intReader("Input length"), 
-           InputHelper.intReader("Input width")
+           InputHelper.readInt("Input length"),
+           InputHelper.readInt("Input width")
    );
    
     System.out.println("area is: " + rechteck.getRectangleArea());

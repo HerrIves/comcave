@@ -1,4 +1,4 @@
-package mytestarea.OB;
+package aufgabe0b;
 
 import java.util.Scanner;
 
@@ -15,6 +15,7 @@ public class ZahlenSumme {
       
       if ((currentInt = sc.nextInt()) == 0) {
         System.out.printf("Sie haben %d eingegeben und deren Summe ist: %d", i, summ);
+        break;
       }
     }
   }

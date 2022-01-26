@@ -55,7 +55,7 @@ public class InputHelper {
   }
 
     public static LocalDate readDate(String message) {
-        DateTimeFormatter dTFormatter = DateTimeFormatter.ofPattern("yyyy MM dd");
+        DateTimeFormatter dTFormatter = DateTimeFormatter.ofPattern("yyyyMMdd");
        return LocalDate.parse(readString(message), dTFormatter);
     }
 }

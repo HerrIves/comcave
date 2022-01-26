@@ -15,6 +15,7 @@ public class Bibliothek {
                     "Choose option:\n"
                             + "1 display a list of books\n"
                             + "2 Add Book\n"
+                            + "3 Add Book\n"
                             + "0 exit\n";
 
             switch (InputHelper.readString(choose)) {
@@ -23,6 +24,9 @@ public class Bibliothek {
                     break;
                 case "2":
                     addBook(Book.getBookFromUserInput());
+                    break;
+                case "3":
+                    findBookByTitle(InputHelper.readString("Input Title"));
                     break;
                 case "0":
                     System.exit(0);
@@ -40,12 +44,14 @@ public class Bibliothek {
         bookList[emptySpace] = book;
     }
 
-    public static Book findBookBy(String category, String request){
-        for (Book book: bookList) {
-
+    public static Book findBookByTitle(String request) {
+        for (Book book : bookList) {
+            if (book.getTitle().equals(request))
+                return book;
         }
         return null;
     }
+
     static class BiblioUtils {
 
 

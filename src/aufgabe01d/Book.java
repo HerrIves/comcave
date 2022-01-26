@@ -8,11 +8,11 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Buch {
-    private String titel;
-    private Isbn isbn;
-    private Date datum;
-    private String author;
-    private int anzahlSeiten;
+    private final String titel;
+    private final Isbn isbn;
+    private final Date datum;
+    private final String author;
+    private final int anzahlSeiten;
 
     private Buch(String titel, String isbn, Date datum, String author, int anzahlSeiten) {
         this.titel = titel;
@@ -22,15 +22,15 @@ public class Buch {
         this.anzahlSeiten = anzahlSeiten;
     }
 
-    public static Buch getInstance(){
-                Buch buch = new Buch(
-                        InputHelper.readString("Input titel"),
-                        InputHelper.readString("Input isbn"),
-                        new Date(System.currentTimeMillis()),
-                        InputHelper.readString("Input autor"),
-                        InputHelper.readInt("Input number of pages")
+    public static Buch getInstance() {
+        Buch buch = new Buch(
+                InputHelper.readString("Input titel"),
+                InputHelper.readString("Input isbn"),
+                new Date(System.currentTimeMillis()),
+                InputHelper.readString("Input autor"),
+                InputHelper.readInt("Input number of pages")
         );
-                return buch;
+        return buch;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Buch {
     }
 
     private class Isbn {
-        private String isbn;
+        private final String isbn;
 
         public Isbn(String isbn) {
             this.isbn = isbn;

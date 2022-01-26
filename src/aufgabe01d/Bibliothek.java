@@ -15,7 +15,7 @@ public class Bibliothek {
                     "Choose option:\n"
                             + "1 display a list of books\n"
                             + "2 Add Book\n"
-                            + "3 Add Book\n"
+                            + "3 Find Book\n"
                             + "0 exit\n";
 
             switch (InputHelper.readString(choose)) {

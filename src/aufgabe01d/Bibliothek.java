@@ -2,42 +2,62 @@ package aufgabe01d;
 
 import utils.InputHelper;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
+
 public class Bibliothek {
-    private static int numberOfBooks = 0;
-    private static Buch[] bibliothek = new Buch[100];
 
+    private static Book[] bookList = new Book[1];
 
+    public static void startBibliothek() {
+        while (true) {
+            String choose =
+                    "Choose option:\n"
+                            + "1 display a list of books\n"
+                            + "2 Add Book\n"
+                            + "0 exit\n";
 
-    public static void addBook(Buch buch){
-        bibliothek[numberOfBooks] = buch;
-        System.out.println("Book added");
-        numberOfBooks++;
-    }
-
-    public static String printBooksArray(){
-        System.out.println(bibliothek[0]);
-        return Arrays.deepToString(bibliothek);
-    }
-
-    public static void startBibliothek(){
-        while (true){
-            int choose = InputHelper.readInt("Choose option:\n"
-                    + "1 Add Book\n"
-                    + "2 display a list of books\n"
-                    + "0 exit\n");
-            switch(choose){
-                case 1:
-                    Bibliothek.addBook(Buch.getInstance());
+            switch (InputHelper.readString(choose)) {
+                case "1":
+                    printBookList();
                     break;
-                case 2:
-                    Bibliothek.printBooksArray();
+                case "2":
+                    addBook(Book.getBookFromUserInput());
                     break;
-                case 0:
+                case "0":
                     System.exit(0);
             }
+        }
+    }
+
+    public static void printBookList() {
+        for (Book book : bookList)
+            System.out.println(book);
+    }
+
+    public static void addBook(Book book) {
+        int emptySpace = BiblioUtils.findEmptySpace(null);
+        bookList[emptySpace] = book;
+    }
+
+    public static Book findBookBy(String category, String request){
+        for (Book book: bookList) {
+
+        }
+        return null;
+    }
+    static class BiblioUtils {
+
+
+        static int findEmptySpace(String place) {
+            int emptySpace;
+
+            for (emptySpace = 0; emptySpace < bookList.length; emptySpace++) {
+                if (bookList[emptySpace] == null)
+                    return emptySpace;
+            }
+            bookList = Arrays.copyOf(bookList, bookList.length + 1);
+            return emptySpace++;
         }
     }
 

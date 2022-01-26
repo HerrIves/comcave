@@ -1,42 +1,38 @@
 package aufgabe01d;
 
 import utils.InputHelper;
+import java.time.LocalDate;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Date;
-import java.util.Scanner;
-
-public class Buch {
-    private final String titel;
+public class Book {
+    private final String title;
     private final Isbn isbn;
-    private final Date datum;
+    private final LocalDate datum;
     private final String author;
     private final int anzahlSeiten;
 
-    private Buch(String titel, String isbn, Date datum, String author, int anzahlSeiten) {
-        this.titel = titel;
+    private Book(String titel, String isbn, LocalDate datum, String author, int anzahlSeiten) {
+        this.title = titel;
         this.isbn = new Isbn(isbn);
         this.datum = datum;
         this.author = author;
         this.anzahlSeiten = anzahlSeiten;
     }
 
-    public static Buch getInstance() {
-        Buch buch = new Buch(
-                InputHelper.readString("Input titel"),
-                InputHelper.readString("Input isbn"),
-                new Date(System.currentTimeMillis()),
-                InputHelper.readString("Input autor"),
-                InputHelper.readInt("Input number of pages")
-        );
-        return buch;
+    public static Book getBookFromUserInput() {
+
+        String titel = InputHelper.readString("Input titel");
+        String isbn = InputHelper.readString("Input isbn");
+        LocalDate date = InputHelper.readDate("Input date YYYY MM DD where Y -year, M -month, D -day zB 2020 11 21");
+        String author = InputHelper.readString("Input author");
+        int numberOfPages = InputHelper.readInt("Input number of pages");
+
+        return new Book(titel, isbn, date, author, numberOfPages);
     }
 
     @Override
     public String toString() {
         return "Buch{" +
-                "titel='" + titel + '\'' +
+                "titel='" + title + '\'' +
                 ", isbn=" + isbn +
                 ", datum=" + datum +
                 ", author='" + author + '\'' +

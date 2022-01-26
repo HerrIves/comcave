@@ -3,6 +3,8 @@ package utils;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class InputHelper {
    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -52,4 +54,8 @@ public class InputHelper {
       return double2Read;
   }
 
+    public static LocalDate readDate(String message) {
+        DateTimeFormatter dTFormatter = DateTimeFormatter.ofPattern("yyyy MM dd");
+       return LocalDate.parse(readString(message), dTFormatter);
+    }
 }

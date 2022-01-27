@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class InputHelper {
     private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -51,6 +52,13 @@ public class InputHelper {
 
     public static LocalDate readDate(String message) {
         DateTimeFormatter dTFormatter = DateTimeFormatter.ofPattern("yyyyMMdd");
-        return LocalDate.parse(readString(message), dTFormatter);
+        LocalDate date;
+        try {
+            date = LocalDate.parse(readString(message), dTFormatter);
+        } catch (DateTimeParseException e) {
+            System.out.println("wrong date format");
+            date = readDate(message);
+        }
+        return date;
     }
 }

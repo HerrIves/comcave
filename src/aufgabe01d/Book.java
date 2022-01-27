@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class Book {
     private final String title;
-
     private final Isbn isbn;
     private final LocalDate datum;
     private final String author;
@@ -25,7 +24,8 @@ public class Book {
 
         String titel = InputHelper.readString("Input titel");
         String isbn = InputHelper.readString("Input isbn");
-        LocalDate date = InputHelper.readDate("Input date yyyyMMdd where y -year, M -month, d -day zB 20201121");
+        LocalDate date = LocalDate.now();
+//                InputHelper.readDate("Input date yyyyMMdd where y -year, M -month, d -day zB 20201121");
         String author = InputHelper.readString("Input author");
         int numberOfPages = InputHelper.readInt("Input number of pages");
 

@@ -6,10 +6,17 @@ import java.util.Arrays;
 
 
 public class Bibliothek {
+    Book[] bookList;
 
-    private static Book[] bookList = new Book[1];
+    public Bibliothek() {
+        this.bookList = new Book[1];
+    }
 
-    public static void startBibliothek() {
+    public Book[] getBookList() {
+        return bookList;
+    }
+
+    public void startBibliothek() {
         while (true) {
             String choose =
                     "Choose option:\n"
@@ -23,7 +30,7 @@ public class Bibliothek {
                     printBookList();
                     break;
                 case "2":
-                    addBook(Book.getBookFromUserInput());
+                    addBook(Book.getBookFromUserInput(), bookList);
                     break;
                 case "3":
                     findBookByTitle(InputHelper.readString("Input Title"));
@@ -34,37 +41,40 @@ public class Bibliothek {
         }
     }
 
-    public static void printBookList() {
+    public void printBookList() {
         for (Book book : bookList)
             System.out.println(book);
     }
 
-    public static void addBook(Book book) {
-        int emptySpace = BiblioUtils.findEmptySpace(null);
-        bookList[emptySpace] = book;
+    public void addBook(Book book, Book[] books) {
+
+        int emptySpace = findEmptySpace(books);
+        if (emptySpace == -1) {
+            emptySpace = books.length;
+            books = Arrays.copyOf(books, books.length + 1);
+        }
+
+        books[emptySpace] = book;
     }
 
-    public static Book findBookByTitle(String request) {
+    public Book[] findBookByTitle(String request) {
+        Bibliothek foundBooks = new Bibliothek();
+
         for (Book book : bookList) {
             if (book.getTitle().equals(request))
-                return book;
+                foundBooks.addBook(book,bookList);
         }
-        return null;
+        return foundBooks.bookList;
     }
 
-    static class BiblioUtils {
+    int findEmptySpace(Book[] books) {
+        int emptySpace;
 
-
-        static int findEmptySpace(String place) {
-            int emptySpace;
-
-            for (emptySpace = 0; emptySpace < bookList.length; emptySpace++) {
-                if (bookList[emptySpace] == null)
-                    return emptySpace;
-            }
-            bookList = Arrays.copyOf(bookList, bookList.length + 1);
-            return emptySpace++;
+        for (emptySpace = 0; emptySpace < books.length; emptySpace++) {
+            if (books[emptySpace] == null)
+                return emptySpace;
         }
+        return -1;
     }
-
 }
+

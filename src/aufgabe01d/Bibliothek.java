@@ -2,17 +2,18 @@ package aufgabe01d;
 
 import utils.InputHelper;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
 public class Bibliothek {
-    Book[] bookList;
+    ArrayList<Book> bookList;
 
     public Bibliothek() {
-        this.bookList = new Book[1];
+        this.bookList = new ArrayList<>();
     }
 
-    public Book[] getBookList() {
+    public ArrayList<Book> getBookList() {
         return bookList;
     }
 
@@ -43,37 +44,36 @@ public class Bibliothek {
     }
 
     public void printBookList() {
-        System.out.println(bookList.length);
+        System.out.println(bookList.size());
         for (Book book : bookList)
             System.out.println(book);
     }
 
-    public void addBook(Book book, Book[] books) {
+    public void addBook(Book book, ArrayList<Book>books) {
 
         int emptySpace = findEmptySpace(books);
         if (emptySpace == -1) {
-            emptySpace = books.length;
-            books = Arrays.copyOf(books, books.length + 1);
+            emptySpace = books.size();
+            //books = Arrays.copyOf(books, books.size() + 1);
         }
-
-        books[emptySpace] = book;
+        books.add(book);
     }
 
-    public Book[] findBookByTitle(String request) {
+    public ArrayList<Book> findBookByTitle(String request) {
         Bibliothek foundBooks = new Bibliothek();
 
         for (Book book : bookList) {
             if (book.getTitle().equals(request))
-                foundBooks.addBook(book,bookList);
+                foundBooks.addBook(book, foundBooks.bookList);
         }
         return foundBooks.bookList;
     }
 
-    int findEmptySpace(Book[] books) {
+    int findEmptySpace(ArrayList<Book> books) {
         int emptySpace;
 
-        for (emptySpace = 0; emptySpace < books.length; emptySpace++) {
-            if (books[emptySpace] == null)
+        for (emptySpace = 0; emptySpace < books.size(); emptySpace++) {
+            if (books.get(emptySpace) == null)
                 return emptySpace;
         }
         return -1;

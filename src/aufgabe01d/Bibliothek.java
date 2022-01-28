@@ -33,7 +33,8 @@ public class Bibliothek {
                     addBook(Book.getBookFromUserInput(), bookList);
                     break;
                 case "3":
-                    findBookByTitle(InputHelper.readString("Input Title"));
+                    System.out.println(
+                            findBookByTitle(InputHelper.readString("Input Title")));
                     break;
                 case "0":
                     System.exit(0);
@@ -42,6 +43,7 @@ public class Bibliothek {
     }
 
     public void printBookList() {
+        System.out.println(bookList.length);
         for (Book book : bookList)
             System.out.println(book);
     }

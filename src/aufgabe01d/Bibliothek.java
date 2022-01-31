@@ -3,39 +3,37 @@ package aufgabe01d;
 import utils.InputHelper;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class Bibliothek {
     ArrayList<Book> bookList;
 
-    public Bibliothek() {
-        this.bookList = new ArrayList<>();
-    }
+    public Bibliothek() {        this.bookList = new ArrayList<>();    }
 
-    public ArrayList<Book> getBookList() {
-        return bookList;
-    }
+    public ArrayList<Book> getBookList() {        return bookList;    }
 
     public void startBibliothek() {
         while (true) {
             String choose =
-                    "Choose option:\n"
+                    "\nChoose option:\n"
                             + "1 display a list of books\n"
                             + "2 Add Book\n"
                             + "3 Find Book\n"
+                            + "4 Delete Book\n"
                             + "0 exit\n";
 
             switch (InputHelper.readString(choose)) {
                 case "1":
-                    printBookList();
+                    printBookList(bookList);
                     break;
                 case "2":
                     addBook(Book.getBookFromUserInput(), bookList);
                     break;
                 case "3":
-                    System.out.println(
-                            findBookByTitle(InputHelper.readString("Input Title")));
+                    findBookByTitle(InputHelper.readString("Input Title"));
+                    break;
+                case "4":
+                    deleteBook();
                     break;
                 case "0":
                     System.exit(0);
@@ -43,31 +41,45 @@ public class Bibliothek {
         }
     }
 
-    public void printBookList() {
-        System.out.println(bookList.size());
-        for (Book book : bookList)
-            System.out.println(book);
+    public void printBookList(ArrayList<Book> books) {
+        System.out.println(books.size() == 0 ? "No Books yet" :
+                books.size() + "\n" + "N° ====================================================================================");
+
+        for (Book book : books) {
+            System.out.println((books.indexOf(book) + 1) + " " + book);
+        }
     }
 
-    public void addBook(Book book, ArrayList<Book>books) {
+    public void addBook(Book book, ArrayList<Book> books) {
 
         int emptySpace = findEmptySpace(books);
         if (emptySpace == -1) {
-            emptySpace = books.size();
-            //books = Arrays.copyOf(books, books.size() + 1);
+            books.add(book);
+            return;
+        //    books = Arrays.copyOf(books, books.size() + 1);
         }
-        books.add(book);
+        books.add(emptySpace , book);
     }
 
-    public ArrayList<Book> findBookByTitle(String request) {
+    public Bibliothek findBookByTitle(String request) {
         Bibliothek foundBooks = new Bibliothek();
 
         for (Book book : bookList) {
             if (book.getTitle().equals(request))
                 foundBooks.addBook(book, foundBooks.bookList);
         }
-        return foundBooks.bookList;
+        printBookList(foundBooks.bookList);
+
+        return foundBooks;
     }
+
+    public void deleteBook() {
+        printBookList(bookList);
+        int index = InputHelper.readInt("choose book number for delete");
+        bookList.remove(index - 1);
+        System.out.println("Book successfully deleted");
+    }
+
 
     int findEmptySpace(ArrayList<Book> books) {
         int emptySpace;

@@ -2,6 +2,7 @@ package aufgabe01d;
 
 import utils.InputHelper;
 
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
 
 
@@ -24,6 +25,7 @@ public class Bibliothek {
                             + "2 Add Book\n"
                             + "3 Find Book\n"
                             + "4 Delete Book\n"
+                            + "5 Update Book\n"
                             + "0 exit\n";
 
             switch (InputHelper.readString(choose)) {
@@ -41,6 +43,7 @@ public class Bibliothek {
                     break;
                 case "5":
                     updateBook();
+                    break;
                 case "0":
                     System.exit(0);
             }
@@ -87,12 +90,14 @@ public class Bibliothek {
     }
 
     private void updateBook() {
-        Book book =
-                findBookByTitle("Input title").bookList
-                        .get(InputHelper.readInt("Input Number of Book"));
+        //printBookList(bookList);
 
-        book.updateField(InputHelper.readString("Which Field do you want to update? \n"
-                                                +"1 - name, 2 - isbn, 3 - date, 4 - author, 5 - number of pages"));
+        Book book = findBookByTitle(InputHelper.readString("Input title"))
+        .bookList.get(InputHelper.readInt("Input number of Book")-1);
+
+
+        book.updateField("Which Field do you want to update? \n"
+                                                +"1 - name, 2 - isbn, 3 - date, 4 - author, 5 - number of pages");
 
 
     }

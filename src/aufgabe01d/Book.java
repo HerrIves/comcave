@@ -4,11 +4,11 @@ import utils.InputHelper;
 import java.time.LocalDate;
 
 public class Book {
-    private final String title;
+    private String title;
     private final Isbn isbn;
-    private final LocalDate datum;
-    private final String author;
-    private final int anzahlSeiten;
+    private LocalDate datum;
+    private String author;
+    private int anzahlSeiten;
 
     private Book(String titel, String isbn, LocalDate datum, String author, int anzahlSeiten) {
         this.title = titel;
@@ -45,15 +45,32 @@ public class Book {
                 '}';
     }
 
-    public Book updateField(String readString) {
-        switch (readString){
-            case 1:
-
+    public void updateField(String readString) {
+        while (true){
+            switch (InputHelper.readString(readString)){
+                case "1":
+                    this.title = InputHelper.readString("Input title");
+                    break;
+                case "2":
+                    this.isbn.isbn = InputHelper.readString("Input ISDN");
+                    break;
+                case "3":
+                    this.datum = InputHelper.readDate("Input Date in yyyyMMdd -format");
+                    break;
+                case "4":
+                    this.author = InputHelper.readString("Input author");
+                    break;
+                case "5":
+                    this.anzahlSeiten = InputHelper.readInt("Input number of seites");
+                    break;
+                case "0":
+                    return;
+            }
         }
     }
 
     private class Isbn {
-        private final String isbn;
+        private String isbn;
 
         public Isbn(String isbn) {
             this.isbn = isbn;

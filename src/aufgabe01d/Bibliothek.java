@@ -8,9 +8,13 @@ import java.util.ArrayList;
 public class Bibliothek {
     ArrayList<Book> bookList;
 
-    public Bibliothek() {        this.bookList = new ArrayList<>();    }
+    public Bibliothek() {
+        this.bookList = new ArrayList<>();
+    }
 
-    public ArrayList<Book> getBookList() {        return bookList;    }
+    public ArrayList<Book> getBookList() {
+        return bookList;
+    }
 
     public void startBibliothek() {
         while (true) {
@@ -35,6 +39,8 @@ public class Bibliothek {
                 case "4":
                     deleteBook();
                     break;
+                case "5":
+                    updateBook();
                 case "0":
                     System.exit(0);
             }
@@ -56,9 +62,9 @@ public class Bibliothek {
         if (emptySpace == -1) {
             books.add(book);
             return;
-        //    books = Arrays.copyOf(books, books.size() + 1);
+            //    books = Arrays.copyOf(books, books.size() + 1);
         }
-        books.add(emptySpace , book);
+        books.add(emptySpace, book);
     }
 
     public Bibliothek findBookByTitle(String request) {
@@ -78,6 +84,17 @@ public class Bibliothek {
         int index = InputHelper.readInt("choose book number for delete");
         bookList.remove(index - 1);
         System.out.println("Book successfully deleted");
+    }
+
+    private void updateBook() {
+        Book book =
+                findBookByTitle("Input title").bookList
+                        .get(InputHelper.readInt("Input Number of Book"));
+
+        book.updateField(InputHelper.readString("Which Field do you want to update? \n"
+                                                +"1 - name, 2 - isbn, 3 - date, 4 - author, 5 - number of pages"));
+
+
     }
 
 

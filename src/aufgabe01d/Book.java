@@ -32,6 +32,8 @@ public class Book {
         return new Book(titel, isbn, date, author, numberOfPages);
     }
 
+
+
     @Override
     public String toString() {
         return "Buch{" +
@@ -41,6 +43,13 @@ public class Book {
                 ", author='" + author + '\'' +
                 ", anzahlSeiten=" + anzahlSeiten +
                 '}';
+    }
+
+    public Book updateField(String readString) {
+        switch (readString){
+            case 1:
+
+        }
     }
 
     private class Isbn {

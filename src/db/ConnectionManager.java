@@ -1,18 +1,59 @@
 package db;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class ConnectionManager {
+
     private static ConnectionManager instance = null;
 
-    private final String USERNAME = "dbuser";
-    private final String PASSWORD = "dbpassword";
+    private final String M_USERNAME = "dbuser";
+    private final String M_PASSWORD = "dbpassword";
     private final String M_CONN_STRING = "jdbc:masql//localhost/explorecalifornia";
     private final String H_CONN_STRING = "jdbc:masql//localhost/explorecalifornia";
 
-    private DBType dbType = DBTYpe.MySQL;
+    private DBType dbType = DBType.MySQL;
 
     private Connection conn = null;
 
-    private ConnectionManager(){}
+    private ConnectionManager() {
+    }
+
+    public Connection getConnection() {
+        if (conn == null) {
+            if (openConnection()) {
+                System.out.println("Connection opened");
+                return conn;
+            }else
+                return null;
+        }
+        return conn;
+    }
+
+    private boolean openConnection() {
+        try {
+            switch (dbType) {
+                case MySQL:
+                    conn = DriverManager.getConnection(M_CONN_STRING, M_USERNAME, M_PASSWORD);
+                    return true;
+                default:
+                    return false;
+            }
+        }catch (SQLException e){
+            System.err.println(e);
+            return false;
+        }
+    }
+    public void close(){
+        System.out.println("Closing connection");
+        try {
+            conn.close();
+            conn = null;
+        }catch (Exception e){
+            System.out.println("sorry. we sorry");
+        }
+    }
 
 
 }

@@ -13,7 +13,8 @@ public class Main {
 
         Connection conn = ConnectionManager.getInstance().getConnection();
 
-        BookManager.displayAllRows();
+//        BookManager.displayAllRows();
+        System.out.println(BookManager.getRow());
 
         ConnectionManager.getInstance().close();
 //        Connection conn = DriverManager.

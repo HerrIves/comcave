@@ -10,10 +10,10 @@ public class Book {
     private String author;
     private int anzahlSeiten;
 
-    private Book(String titel, String isbn, LocalDate datum, String author, int anzahlSeiten) {
+    public Book(String titel, String isbn, String author, int anzahlSeiten) {
         this.title = titel;
         this.isbn = new Isbn(isbn);
-        this.datum = datum;
+//        this.datum = datum;
         this.author = author;
         this.anzahlSeiten = anzahlSeiten;
     }
@@ -24,12 +24,11 @@ public class Book {
 
         String titel = InputHelper.readString("Input titel");
         String isbn = InputHelper.readString("Input isbn");
-        LocalDate date = LocalDate.now();
-//                InputHelper.readDate("Input date yyyyMMdd where y -year, M -month, d -day zB 20201121");
+//        LocalDate date = InputHelper.readDate("Input date yyyyMMdd where y -year, M -month, d -day zB 20201121");
         String author = InputHelper.readString("Input author");
         int numberOfPages = InputHelper.readInt("Input number of pages");
 
-        return new Book(titel, isbn, date, author, numberOfPages);
+        return new Book(titel, isbn, author, numberOfPages);
     }
 
 

@@ -2,8 +2,10 @@ package db.tables;
 
 import aufgabe01d.Book;
 import db.ConnectionManager;
+import utils.InputHelper;
 
 import java.sql.*;
+import java.time.LocalDate;
 
 public class BookManager {
 
@@ -30,22 +32,31 @@ public class BookManager {
     }
 
     public static Book getRow() {
+        Book bean = null;
         String sql = "SELECT * FROM BOOKS " +
                 "WHERE ID = ?";
         ResultSet rs = null;
 
         try (
-                PreparedStatement stmt = conn.prepareStatement(sql);
+                PreparedStatement stmt = conn.prepareStatement(sql)
         ) {
-            stmt.setInt(1, id);
+            stmt.setInt(1, InputHelper.readInt("Input Book index"));
             rs = stmt.executeQuery();
 
             if (rs.next()){
-                Book bean = new Book();
+                String title = rs.getNString(2);
+                String isbn = rs.getNString(3);
+                Date datum = rs.getDate(4);
+                String author = rs.getNString(5);
+                int seitenNumber = rs.getInt(6);
+
+                bean = new Book(
+                        title, isbn, author, seitenNumber);
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
 
+        return bean;
     }
 }

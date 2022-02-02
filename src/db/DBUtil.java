@@ -10,11 +10,16 @@ public class DBUtil {
     private static final String M_USERNAME = "dbuser";
     private static final String M_PASSWORD = "dbpassword";
     private static final String M_CONN_STRING = "jdbc:masql//192.168.0.206/explorecalifornia";
+    private static final String H_USERNAME = "sa";
+    private static final String H_PASSWORD = "";
+    private static final String H_CONN_STRING = "jdbc:h2:~/test";
 
     public static Connection getConnection(DBType dbType) throws SQLException {
         switch (dbType) {
             case MySQL:
                 return DriverManager.getConnection(M_CONN_STRING, M_USERNAME, M_PASSWORD);
+            case H2:
+                return DriverManager.getConnection(H_CONN_STRING, H_USERNAME, H_PASSWORD);
 
             default:
                 return null;

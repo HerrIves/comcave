@@ -10,14 +10,26 @@ public class ConnectionManager {
 
     private final String M_USERNAME = "dbuser";
     private final String M_PASSWORD = "dbpassword";
-    private final String M_CONN_STRING = "jdbc:masql//localhost/explorecalifornia";
-    private final String H_CONN_STRING = "jdbc:masql//localhost/explorecalifornia";
+    private final String M_CONN_STRING = "jdbc:mysql//192.168.0.206:3306/explorecalifornia";
+    private static final String H_USERNAME = "sa";
+    private static final String H_PASSWORD = "";
+    private static final String H_CONN_STRING = "jdbc:h2:~/test";
 
-    private DBType dbType = DBType.MySQL;
+    private DBType dbType = DBType.H2;
 
     private Connection conn = null;
 
-    private ConnectionManager() {
+    private ConnectionManager() {    }
+
+    public static ConnectionManager getInstance(){
+        if (instance == null){
+            instance = new ConnectionManager();
+        }
+        return instance;
+    }
+
+    public void setDbType(DBType dbType){
+        instance.dbType = dbType;
     }
 
     public Connection getConnection() {
@@ -37,6 +49,8 @@ public class ConnectionManager {
                 case MySQL:
                     conn = DriverManager.getConnection(M_CONN_STRING, M_USERNAME, M_PASSWORD);
                     return true;
+                case H2:
+                    conn = DriverManager.getConnection(H_CONN_STRING, H_USERNAME, H_PASSWORD);
                 default:
                     return false;
             }

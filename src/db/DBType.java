@@ -1,5 +1,5 @@
 package db;
 
 public enum DBType {
-    ORACLE, MySQL
+    ORACLE, MySQL, H2
 }

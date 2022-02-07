@@ -1,5 +1,10 @@
 package aufgabe03c;
 
+import aufgabe03c.types.ANTRIB;
+import aufgabe03c.types.FUEL;
+import aufgabe03c.types.Farbe;
+import aufgabe03c.types.GETRIBE;
+
 public class Auto {
     Farbe farbe;
     GETRIBE getribe;

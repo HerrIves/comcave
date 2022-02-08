@@ -1,7 +1,5 @@
 package aufgabe04d;
 
-import utils.InputHelper;
-
 import java.util.Random;
 
 public class PassGenerator {
@@ -13,23 +11,22 @@ public class PassGenerator {
         return this;
     }
 
-    public String generatePass() {
-        StringBuffer passbuffer = new StringBuffer();
+    public String generateAndCheckPass() {
 
         do {
+            StringBuffer passbuffer = new StringBuffer();
 
             new Random()
                     .ints(passLength, 33, 125)
                     .forEach(x -> passbuffer.append((char) x));
             password = passbuffer.toString();
 
-        } while (!checkPassReq());
+        } while (!checkPassReq(password));
 
         return password;
     }
 
-    public boolean checkPassReq() {
-//        password.matches()
-        return true;
+    /*private*/public static boolean checkPassReq(String password) {
+        return password.matches(".*[A-Z]+.*[\\d]+.*\\W+.*");
     }
 }

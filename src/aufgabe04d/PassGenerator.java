@@ -26,7 +26,12 @@ public class PassGenerator {
         return password;
     }
 
-    /*private*/public static boolean checkPassReq(String password) {
-        return password.matches(".*[A-Z]+.*[\\d]+.*\\W+.*");
+    private static boolean checkPassReq(String password) {
+        return password.matches( ".*" + //any simbol
+                                       "[A-Z]+" + //Big Letter
+                                       ".*[\\d]+" + //any digit
+                                       ".*\\W+" + //any non Letter
+                                       ".*"
+        );
     }
 }

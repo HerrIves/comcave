@@ -14,10 +14,10 @@ public class PassGenerator {
     public String generateAndCheckPass() {
 
         do {
-            StringBuffer passbuffer = new StringBuffer();
+            StringBuffer passbuffer = new StringBuffer(passLength);
 
             new Random()
-                    .ints(passLength, 33, 125)
+                    .ints(passLength, 33, 122)
                     .forEach(x -> passbuffer.append((char) x));
             password = passbuffer.toString();
 
@@ -26,12 +26,14 @@ public class PassGenerator {
         return password;
     }
 
+
     private static boolean checkPassReq(String password) {
-        return password.matches( ".*" + //any simbol
-                                       "[A-Z]+" + //Big Letter
-                                       ".*[\\d]+" + //any digit
-                                       ".*\\W+" + //any non Letter
-                                       ".*"
-        );
+        System.out.println(password);
+        return  password.matches(".*[\\d]+.*")    //   ".*[\\d]+" any digit
+                && password.matches(".*[A-Z]+.*") //   "[A-Z]+"   Big Letter
+                && password.matches(".*[\\W]+.*");//   ".*\\W+"   any non Letter
+
     }
+
+
 }

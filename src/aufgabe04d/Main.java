@@ -7,7 +7,7 @@ public class Main {
 
         String password =
                 new PassGenerator()
-                        .setPassLength(InputHelper.readInt("Enter Lenght of password"))
+                        .setPassLength(InputHelper.readInt("Enter length of password"))
                         .generateAndCheckPass();
 
         System.out.println(password);

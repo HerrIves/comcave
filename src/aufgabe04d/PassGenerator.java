@@ -26,7 +26,6 @@ public class PassGenerator {
         return password;
     }
 
-
     private static boolean checkPassReq(String password) {
         System.out.println(password);
         return  password.matches(".*[\\d]+.*")    //   ".*[\\d]+" any digit

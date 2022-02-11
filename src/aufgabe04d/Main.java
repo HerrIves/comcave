@@ -8,7 +8,7 @@ public class Main {
     static Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
 
-        logger.info("Hello world");
+        logger.info("logger - Hello world");
 //
 //        String password =
 //                new PassGenerator()

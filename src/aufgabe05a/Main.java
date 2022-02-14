@@ -1,4 +1,4 @@
-package aufgabe05a.aufgabe01a;
+package aufgabe05a;
 
 import java.util.ArrayList;
 import java.util.List;

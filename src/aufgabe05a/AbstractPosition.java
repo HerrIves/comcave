@@ -1,4 +1,4 @@
-package aufgabe05a.aufgabe01a;
+package aufgabe05a;
 
 public abstract class AbstractPosition {
     private String name;

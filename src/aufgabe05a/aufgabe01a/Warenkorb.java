@@ -3,9 +3,9 @@ package aufgabe05a.aufgabe01a;
 import java.util.List;
 
 public class Warenkorb {
-    private List<Position> positionList;
+    private List<AbstractPosition> positionList;
 
-    public Warenkorb(List<Position> positionList) {
+    public Warenkorb(List<AbstractPosition> positionList) {
         this.positionList = positionList;
     }
 
@@ -19,7 +19,7 @@ public class Warenkorb {
 
     public float getGesamtPreis(){
         float gesamtPreis = 0;
-        for (Position p: positionList             ) {
+        for (AbstractPosition p: positionList             ) {
             gesamtPreis += p.getPrice()*p.getMwSt()*p.getAmount();
         }
         return gesamtPreis;

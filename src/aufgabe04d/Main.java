@@ -2,7 +2,6 @@ package aufgabe04d;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import utils.InputHelper;
 
 public class Main {
     static Logger logger = LoggerFactory.getLogger(Main.class);

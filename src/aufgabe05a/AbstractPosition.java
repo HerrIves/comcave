@@ -4,7 +4,7 @@ public abstract class AbstractPosition {
     private String name;
     private int amount;
     private float price;
-    private float mwSt;
+    private final float mwSt;
 
     public String getName() {
         return name;
@@ -30,13 +30,7 @@ public abstract class AbstractPosition {
         this.price = price;
     }
 
-    public float getMwSt() {
-        return mwSt;
-    }
-
-    public void setMwSt(float mwSt) {
-        this.mwSt = mwSt;
-    }
+    public abstract float getMwSt();
 
     public AbstractPosition(String name, int amount, float price, float mwSt) {
         this.name = name;

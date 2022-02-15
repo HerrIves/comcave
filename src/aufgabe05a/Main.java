@@ -9,12 +9,12 @@ public class Main {
         List positions = new ArrayList<AbstractPosition>();
         Warenkorb myWarenkorb = new Warenkorb(positions);
 
-        myWarenkorb.addPosition(new Position("Midi tower", 1, 20, mwSt));
-        myWarenkorb.addPosition(new Position("Netsteil", 1, 30, mwSt));
-        myWarenkorb.addPosition(new Position("Motherboard", 1, 30, mwSt));
-        myWarenkorb.addPosition(new Position("CPU", 1, 100, mwSt));
-        myWarenkorb.addPosition(new Position("Memory", 2, 50, mwSt));
-        myWarenkorb.addPosition(new Position("Harddrive", 2, 150, mwSt));
+        myWarenkorb.addPosition(new PositionMwSt118("Midi tower", 1, 20));
+        myWarenkorb.addPosition(new PositionMwSt118("Netsteil", 1, 30));
+        myWarenkorb.addPosition(new PositionMwSt118("Motherboard", 1, 30));
+        myWarenkorb.addPosition(new PositionMwSt118("CPU", 1, 100));
+        myWarenkorb.addPosition(new PositionMwSt118("Memory", 2, 50));
+        myWarenkorb.addPosition(new PositionMwSt118("Harddrive", 2, 150));
 
         System.out.println(myWarenkorb.getGesamtPreis());
     }

@@ -9,10 +9,10 @@ public class Warenkorb {
         this.positionList = positionList;
     }
 
-    public void addPosition(Position position){
+    public void addPosition(PositionMwSt118 position){
         positionList.add(position);
     }
-    public void removePosition(Position position){
+    public void removePosition(PositionMwSt118 position){
         positionList.remove(position);
     }
 

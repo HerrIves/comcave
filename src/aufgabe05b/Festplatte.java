@@ -1,4 +1,4 @@
-package aufgabe05b.aufgabe05a;
+package aufgabe05b;
 
 import aufgabe05a.PositionMwSt118;
 
@@ -8,8 +8,10 @@ class Festplatte extends PositionMwSt118 {
     public int getSize() {
         return size;
     }
-    public void setSize(int size) {        this.size = size;    }
 
+    public Festplatte setSize(int size) {        this.size = size;
+        return this;
+    }
     public Festplatte(String name, int amount, float price) {
         super(name, amount, price);
     }
@@ -18,4 +20,14 @@ class Festplatte extends PositionMwSt118 {
         return new Festplatte("HDD", 1, 50);
     }
 
+    public static Festplatte getInstance(int i) {
+        return getInstance().setSize(i);
+    }
+
+    @Override
+    public String toString() {
+        return "Festplatte{" +
+                "size=" + size +
+                '}';
+    }
 }

@@ -1,4 +1,4 @@
-package aufgabe05b.aufgabe05a;
+package aufgabe05b;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,12 +11,12 @@ public class TestPC {
 
     public static void main(String[] args) {
         List<PC> pcList = new ArrayList<>();
-        pcList.add(new PC("1", Processor.getInstance(), RAM.getInstance(), Festplatte.getInstance()));
-        pcList.add(new PC("2", Processor.getInstance(), RAM.getInstance(), Festplatte.getInstance()));
-        pcList.add(new PC("3", Processor.getInstance(), RAM.getInstance(), Festplatte.getInstance()));
+        pcList.add(new PC("HP", Processor.getInstance(), RAM.getInstance(), Festplatte.getInstance()));
+        pcList.add(new PC("DELL", Processor.getInstance(2500), RAM.getInstance(2048), Festplatte.getInstance(500)));
+        pcList.add(new PC("IBM", Processor.getInstance(3500), RAM.getInstance(4096), Festplatte.getInstance(750)));
 
         pcList.stream()
-                .peek(pc -> logger.info("{} - {}", pc.bezeichung, pc.zustand))
+                .peek(pc -> logger.info("{}", pc))
                 .peek(PC::starten)
                 .peek(pc -> logger.info("{}", pc.zustand))
                 .peek(PC::runterfahren)

@@ -1,35 +1,31 @@
-package oca.aufgabe05d;
+package aufgabe05d;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class FormsTest {
-    static Quader quader;
-
-    @BeforeAll
-    static void prepareData(){
-         quader = new Quader(4, 5, 10);
-    }
+    Quader quader = new Quader(4, 5, 10);
 
     @Test
-    void getSurfaceAreaTest() {
+    void testGetSurfaceArea() {
         assertEquals(220, quader.getSurfaceArea());
     }
 
     @Test
-    void getVolumeTest() {
+    void getVolume() {
         assertEquals(200, quader.getVolume());
     }
 
     @Test
-    void getBaseAreaTest() {
+    void getBaseArea() {
         assertEquals(20, quader.getBaseArea());
     }
 
     @Test
-    void getBasePerimetrTest() {
-        assertEquals(18, quader.getBasePerimeter());
+    void getBasePerimetr() {
+        assertEquals(18, quader.getBasePerimetr());
     }
 }

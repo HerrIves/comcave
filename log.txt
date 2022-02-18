@@ -134,3 +134,151 @@ logger: 2022-02-11 15:14:38 INFO  [main]: Hello world
 2022-02-15 16:13:37 INFO  [main]: GESTARTED
 2022-02-15 16:13:37 INFO  [main]: AUSGESCHALTET
 2022-02-15 16:13:37 INFO  [main]: end
+2022-02-16 08:12:36 INFO  [main]: PC{bezeichung='1', prozessor=Processor@28ba21f3, ram=RAM@694f9431, festplatte=Festplatte@f2a0b8e, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:12:36 INFO  [main]: GESTARTED
+2022-02-16 08:12:36 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:12:36 INFO  [main]: PC{bezeichung='2', prozessor=Processor@3581c5f3, ram=RAM@6aa8ceb6, festplatte=Festplatte@2530c12, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:12:36 INFO  [main]: GESTARTED
+2022-02-16 08:12:36 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:12:36 INFO  [main]: PC{bezeichung='3', prozessor=Processor@73c6c3b2, ram=RAM@48533e64, festplatte=Festplatte@64a294a6, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:12:36 INFO  [main]: GESTARTED
+2022-02-16 08:12:36 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:12:36 INFO  [main]: end
+2022-02-16 08:13:37 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:13:37 INFO  [main]: GESTARTED
+2022-02-16 08:13:37 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:13:37 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:13:37 INFO  [main]: GESTARTED
+2022-02-16 08:13:37 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:13:37 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:13:37 INFO  [main]: GESTARTED
+2022-02-16 08:13:37 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:13:37 INFO  [main]: end
+2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.aufgabe05a.RAM@28ba21f3}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:17:07 INFO  [main]: GESTARTED
+2022-02-16 08:17:07 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.aufgabe05a.RAM@593634ad}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:17:07 INFO  [main]: GESTARTED
+2022-02-16 08:17:07 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.aufgabe05a.RAM@20fa23c1}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:17:07 INFO  [main]: GESTARTED
+2022-02-16 08:17:07 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:17:07 INFO  [main]: end
+2022-02-16 08:22:49 INFO  [main]: end
+2022-02-16 08:23:01 INFO  [main]: RAM{size=0AbstractPosition{name='RAM', amount=1, price=100.0, mwSt=1.18}} - {}
+2022-02-16 08:23:01 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:23:01 INFO  [main]: RAM{size=0AbstractPosition{name='RAM', amount=1, price=100.0, mwSt=1.18}} - {}
+2022-02-16 08:23:01 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:23:01 INFO  [main]: RAM{size=0AbstractPosition{name='RAM', amount=1, price=100.0, mwSt=1.18}} - {}
+2022-02-16 08:23:01 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:23:01 INFO  [main]: end
+2022-02-16 08:55:42 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=0AbstractPosition{name='RAM', amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:55:42 INFO  [main]: GESTARTED
+2022-02-16 08:55:42 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:55:42 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0AbstractPosition{name='RAM', amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:55:42 INFO  [main]: GESTARTED
+2022-02-16 08:55:42 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:55:42 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0AbstractPosition{name='RAM', amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:55:42 INFO  [main]: GESTARTED
+2022-02-16 08:55:42 INFO  [main]: AUSGESCHALTET
+2022-02-16 08:55:42 INFO  [main]: end
+2022-02-16 09:08:25 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=1500}, ram=RAM{size=0{name='RAM', amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:08:25 INFO  [main]: GESTARTED
+2022-02-16 09:08:25 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:08:25 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=0{name='RAM', amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:08:25 INFO  [main]: GESTARTED
+2022-02-16 09:08:25 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:08:25 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=0{name='RAM', amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:08:25 INFO  [main]: GESTARTED
+2022-02-16 09:08:25 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:08:25 INFO  [main]: end
+2022-02-16 09:13:14 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=1500}, ram=RAM{size=0{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:13:14 INFO  [main]: GESTARTED
+2022-02-16 09:13:14 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:13:14 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=0{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:13:14 INFO  [main]: GESTARTED
+2022-02-16 09:13:14 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:13:14 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=0{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:13:14 INFO  [main]: GESTARTED
+2022-02-16 09:13:14 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:13:14 INFO  [main]: end
+2022-02-16 09:20:02 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:20:02 INFO  [main]: GESTARTED
+2022-02-16 09:20:02 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:02 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:20:02 INFO  [main]: GESTARTED
+2022-02-16 09:20:02 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:02 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET} - {}
+2022-02-16 09:20:02 INFO  [main]: GESTARTED
+2022-02-16 09:20:02 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:02 INFO  [main]: end
+2022-02-16 09:20:23 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET}
+2022-02-16 09:20:23 INFO  [main]: GESTARTED
+2022-02-16 09:20:23 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:23 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET}
+2022-02-16 09:20:23 INFO  [main]: GESTARTED
+2022-02-16 09:20:23 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:23 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET}
+2022-02-16 09:20:23 INFO  [main]: GESTARTED
+2022-02-16 09:20:23 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:23 INFO  [main]: end
+2022-02-16 09:20:51 INFO  [main]: PC{bezeichung='HP', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET}
+2022-02-16 09:20:51 INFO  [main]: GESTARTED
+2022-02-16 09:20:51 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:51 INFO  [main]: PC{bezeichung='DELL', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET}
+2022-02-16 09:20:51 INFO  [main]: GESTARTED
+2022-02-16 09:20:51 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:51 INFO  [main]: PC{bezeichung='IBM', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET}
+2022-02-16 09:20:51 INFO  [main]: GESTARTED
+2022-02-16 09:20:51 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:20:51 INFO  [main]: end
+2022-02-16 09:28:21 INFO  [main]: PC{bezeichung='HP', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET}
+2022-02-16 09:28:21 INFO  [main]: GESTARTED
+2022-02-16 09:28:21 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:28:21 INFO  [main]: PC{bezeichung='DELL', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET}
+2022-02-16 09:28:21 INFO  [main]: GESTARTED
+2022-02-16 09:28:21 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:28:21 INFO  [main]: PC{bezeichung='IBM', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{, amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET}
+2022-02-16 09:28:21 INFO  [main]: GESTARTED
+2022-02-16 09:28:21 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:28:21 INFO  [main]: end
+2022-02-16 09:33:24 INFO  [main]: PC{bezeichung='HP', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET}
+2022-02-16 09:33:24 INFO  [main]: GESTARTED
+2022-02-16 09:33:24 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:33:24 INFO  [main]: PC{bezeichung='DELL', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET}
+2022-02-16 09:33:24 INFO  [main]: GESTARTED
+2022-02-16 09:33:24 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:33:24 INFO  [main]: PC{bezeichung='IBM', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET}
+2022-02-16 09:33:24 INFO  [main]: GESTARTED
+2022-02-16 09:33:24 INFO  [main]: AUSGESCHALTET
+2022-02-16 09:33:24 INFO  [main]: end
+2022-02-16 10:24:33 INFO  [main]: PC{bezeichung='HP', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET}
+2022-02-16 10:24:33 INFO  [main]: GESTARTED
+2022-02-16 10:24:33 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:24:33 INFO  [main]: PC{bezeichung='DELL', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET}
+2022-02-16 10:24:33 INFO  [main]: GESTARTED
+2022-02-16 10:24:33 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:24:33 INFO  [main]: PC{bezeichung='IBM', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET}
+2022-02-16 10:24:33 INFO  [main]: GESTARTED
+2022-02-16 10:24:33 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:24:33 INFO  [main]: end
+2022-02-16 10:26:40 INFO  [main]: PC{bezeichung='HP', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET}
+2022-02-16 10:26:40 INFO  [main]: GESTARTED
+2022-02-16 10:26:40 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:26:40 INFO  [main]: PC{bezeichung='DELL', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET}
+2022-02-16 10:26:40 INFO  [main]: GESTARTED
+2022-02-16 10:26:40 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:26:40 INFO  [main]: PC{bezeichung='IBM', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET}
+2022-02-16 10:26:40 INFO  [main]: GESTARTED
+2022-02-16 10:26:40 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:26:40 INFO  [main]: end
+2022-02-16 10:31:01 INFO  [main]: PC{bezeichung='HP', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET}
+2022-02-16 10:31:01 INFO  [main]: GESTARTED
+2022-02-16 10:31:01 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:31:01 INFO  [main]: PC{bezeichung='DELL', prozessor=Processor{geschwindigkeit=2500}, ram=RAM{size=2048{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=500}, zustand=AUSGESCHALTET}
+2022-02-16 10:31:01 INFO  [main]: GESTARTED
+2022-02-16 10:31:01 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:31:01 INFO  [main]: PC{bezeichung='IBM', prozessor=Processor{geschwindigkeit=3500}, ram=RAM{size=4096{amount=1, price=100.0, mwSt=1.18}}, festplatte=Festplatte{size=750}, zustand=AUSGESCHALTET}
+2022-02-16 10:31:01 INFO  [main]: GESTARTED
+2022-02-16 10:31:01 INFO  [main]: AUSGESCHALTET
+2022-02-16 10:31:01 INFO  [main]: end

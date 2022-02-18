@@ -1,6 +1,7 @@
 package aufgabe05a;
 
 public class PositionMwSt118 extends AbstractPosition{
+    String name;
     private static final float mwSt = 1.18f;
 
     @Override
@@ -9,6 +10,7 @@ public class PositionMwSt118 extends AbstractPosition{
     }
 
     public PositionMwSt118(String name, int amount, float price) {
-        super(name, amount, price, mwSt);
+        super(amount, price, mwSt);
+        this.name = name;
     }
 }

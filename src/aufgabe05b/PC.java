@@ -1,4 +1,4 @@
-package aufgabe05b.aufgabe05a;
+package aufgabe05b;
 
 class PC{
     enum Zustand{GESTARTED, AUSGESCHALTET, SCHLAFT}

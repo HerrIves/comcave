@@ -5,6 +5,10 @@ public abstract class Prisma implements Form{
     abstract double getBaseArea();
     abstract double getBasePerimetr();
 
+    public Prisma(double length) {
+        this.length = length;
+    }
+
     @Override
     public double getSurfaceArea() {
         return 2*getBaseArea() + getBasePerimetr() * length;

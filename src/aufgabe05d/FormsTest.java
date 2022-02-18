@@ -7,25 +7,30 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FormsTest {
-    Quader quader = new Quader(4, 5, 10);
+    static Quader quader;
+
+    @BeforeAll
+    static void prepareData(){
+         quader = new Quader(4, 5, 10);
+    }
 
     @Test
-    void testGetSurfaceArea() {
+    void getSurfaceAreaTest() {
         assertEquals(220, quader.getSurfaceArea());
     }
 
     @Test
-    void getVolume() {
+    void getVolumeTest() {
         assertEquals(200, quader.getVolume());
     }
 
     @Test
-    void getBaseArea() {
+    void getBaseAreaTest() {
         assertEquals(20, quader.getBaseArea());
     }
 
     @Test
-    void getBasePerimetr() {
+    void getBasePerimetrTest() {
         assertEquals(18, quader.getBasePerimetr());
     }
 }

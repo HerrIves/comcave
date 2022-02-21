@@ -1,4 +1,4 @@
-package oca.aufgabe05d;
+package aufgabe05d;
 
 public class Würfel extends Quader{
     public Würfel(double width) {

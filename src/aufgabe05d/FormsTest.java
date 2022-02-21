@@ -1,7 +1,6 @@
 package aufgabe05d;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,6 +30,6 @@ class FormsTest {
 
     @Test
     void getBasePerimetrTest() {
-        assertEquals(18, quader.getBasePerimetr());
+        assertEquals(18, quader.getBasePerimeter());
     }
 }

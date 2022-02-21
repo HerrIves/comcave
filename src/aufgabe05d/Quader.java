@@ -16,7 +16,18 @@ public class Quader extends Prisma{
     }
 
     @Override
-    double getBasePerimetr() {
+    double getBasePerimeter() {
         return 2 * (width + height);
+    }
+
+    @Override
+    public void printInfo() {
+        System.out.println("height: " + height);
+        System.out.println("width: " + width);
+        super.printInfo();
+
+
+
+
     }
 }

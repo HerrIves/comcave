@@ -154,13 +154,13 @@ logger: 2022-02-11 15:14:38 INFO  [main]: Hello world
 2022-02-16 08:13:37 INFO  [main]: GESTARTED
 2022-02-16 08:13:37 INFO  [main]: AUSGESCHALTET
 2022-02-16 08:13:37 INFO  [main]: end
-2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.aufgabe05a.RAM@28ba21f3}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='1', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.oca.aufgabe05a.RAM@28ba21f3}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
 2022-02-16 08:17:07 INFO  [main]: GESTARTED
 2022-02-16 08:17:07 INFO  [main]: AUSGESCHALTET
-2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.aufgabe05a.RAM@593634ad}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='2', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.oca.aufgabe05a.RAM@593634ad}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
 2022-02-16 08:17:07 INFO  [main]: GESTARTED
 2022-02-16 08:17:07 INFO  [main]: AUSGESCHALTET
-2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.aufgabe05a.RAM@20fa23c1}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
+2022-02-16 08:17:07 INFO  [main]: PC{bezeichung='3', prozessor=Processor{geschwindigkeit=0}, ram=RAM{size=0aufgabe05b.oca.aufgabe05a.RAM@20fa23c1}, festplatte=Festplatte{size=0}, zustand=AUSGESCHALTET} - {}
 2022-02-16 08:17:07 INFO  [main]: GESTARTED
 2022-02-16 08:17:07 INFO  [main]: AUSGESCHALTET
 2022-02-16 08:17:07 INFO  [main]: end

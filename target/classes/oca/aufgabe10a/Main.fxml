@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oca.aufgabe10a.MainController">
+   <children>
+      <VBox prefHeight="394.0" prefWidth="600.0">
+         <children>
+            <SplitPane dividerPositions="0.1989795918367347" orientation="VERTICAL" prefHeight="406.0" prefWidth="600.0">
+              <items>
+                  <HBox alignment="CENTER" prefHeight="89.0" prefWidth="598.0" spacing="10.0">
+                     <children>
+                        <Label text="Label" />
+                        <DatePicker />
+                        <Label text="Label" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Accordion prefHeight="309.0" prefWidth="598.0">
+                    <panes>
+                      <TitledPane animated="false" text="untitled 1" />
+                    </panes>
+                  </Accordion>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

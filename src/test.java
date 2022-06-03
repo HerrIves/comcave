@@ -1,4 +1,4 @@
-import aufgabe01d.Start;
+import oca.aufgabe01d.Start;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,6 +1,8 @@
-package aufgabe05d;
+package oca.aufgabe05d;
 
-public class Würfel extends Quader{
+import oca.aufgabe05d.Quader;
+
+public class Würfel extends Quader {
     public Würfel(double width) {
         super(width, width, width);
     }

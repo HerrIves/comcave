@@ -1,4 +1,4 @@
-package ocp.aufgabe01g;
+package ocp.aufgaben.aufgabe01g;
 
 public class Main {
     public static void main(String[] args) {

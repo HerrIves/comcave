@@ -16,7 +16,7 @@ public class Main {
 
         try {
             properties.load(new FileInputStream("resources\\config.properties"));
-        } catch (IOException e) {            e.printStackTrace();        }
+        } catch (IOException e) { e.printStackTrace();        }
 
         System.out.println(properties);
 

@@ -1,4 +1,4 @@
-package aufgabe05d;
+package oca.aufgabe05d;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,6 +26,6 @@ class FormsTest {
 
     @Test
     void getBasePerimetr() {
-        assertEquals(18, quader.getBasePerimetr());
+        assertEquals(18, quader.getBasePerimeter());
     }
 }

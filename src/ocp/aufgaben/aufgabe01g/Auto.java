@@ -1,4 +1,4 @@
-package ocp.aufgabe01g;
+package ocp.aufgaben.aufgabe01g;
 
 public final class Auto {
     public final String hersteller;

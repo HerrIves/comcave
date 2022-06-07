@@ -1,4 +1,4 @@
-package aufgabe05d;
+package ocp.aufgaben.aufgabe05d;
 
 public abstract class Prisma implements Form{
     private double length;

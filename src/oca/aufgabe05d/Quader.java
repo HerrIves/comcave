@@ -1,4 +1,4 @@
-package aufgabe05d;
+package oca.aufgabe05d;
 
 public class Quader extends Prisma{
     double width;
@@ -16,7 +16,7 @@ public class Quader extends Prisma{
     }
 
     @Override
-    double getBasePerimetr() {
+    double getBasePerimeter() {
         return 2 * (width + height);
     }
 }

@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.function.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,7 +29,18 @@ public class Main {
                 .filter(personPredicate)
                 .forEach(System.out::println);
 
+        Car car = n -> System.out.println();
+        car.drive2();
+
+
 
 
     }
+}
+interface Car<T>{
+    void drive(String s);
+    default void drive2(){
+        System.out.println("!!");
+    }
+
 }

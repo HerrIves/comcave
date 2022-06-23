@@ -1,4 +1,4 @@
-package test.collections_test.treeSetTest;
+package test.collections_test;
 
 import java.util.Set;
 import java.util.TreeSet;
@@ -9,8 +9,15 @@ public class TreeSetTest {
         treeSet.add(2);
         treeSet.add(1);
         treeSet.add(4);
-        treeSet.add(10);
-        treeSet.add(9);
+
+        treeSet.first();
+        treeSet.last();
+
+        treeSet.higher(1);
+        treeSet.floor(1);
+
+        treeSet.pollFirst();
+        treeSet.pollLast();
 
         System.out.println(treeSet);
 

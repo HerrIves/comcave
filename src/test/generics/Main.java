@@ -18,6 +18,12 @@ public class Main {
 
         System.out.println(hashMap);
 
+        List<Integer>out = process(new ArrayList<Integer>());
 
+
+    }
+
+    public static <T extends Number> List<T> process(List<? extends Number> nums){
+        return new ArrayList<T>();
     }
 }

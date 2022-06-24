@@ -5,6 +5,7 @@ import oca.aufgabe01a.Person;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 import java.util.function.*;
 import java.util.stream.Collector;
@@ -27,7 +28,8 @@ public class Main {
         Predicate<Person> personPredicate = person -> person.currrentCount > 0;
         personArrayList.stream()
                 .filter(personPredicate)
-                .forEach(System.out::println);
+                .allMatch(p ->p.currrentCount>0);
+//                .forEach(System.out::println);
 
         Car car = n -> System.out.println();
         car.drive2();

@@ -24,7 +24,7 @@ public class Test implements Test1Interface {
         Iterator<Map.Entry<String, Object>> iterator = s.entrySet().iterator();
 
         while (iterator.hasNext()){
-            Map.Entry entry = iterator.next();
+            Map.Entry<String, Object> entry = iterator.next();
             System.out.println(entry.getValue() + " " + entry.getKey());
         }
     }
